@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareLife", "SquareLife\SquareLife.csproj", "{E21BC706-0E2F-4624-A15D-EE341331FD3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E21BC706-0E2F-4624-A15D-EE341331FD3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E21BC706-0E2F-4624-A15D-EE341331FD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E21BC706-0E2F-4624-A15D-EE341331FD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E21BC706-0E2F-4624-A15D-EE341331FD3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F475138-525C-412A-81D6-3DAD2A26BA56}
+	EndGlobalSection
+EndGlobal

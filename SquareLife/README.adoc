@@ -1,0 +1,6 @@
+﻿= Project "Square Life"
+
+This work is a 1st Term Project on Objective-Oriented Programming. It is a simulation of a biome with two native life forms - Kuvahaku and Kuvat - 
+and an invader-life form named Uutiset. They can be born, move, give birth, be swallowed/swallow and die. 
+
+For further information read the "Documentation/LifeRules.adoc" file.
