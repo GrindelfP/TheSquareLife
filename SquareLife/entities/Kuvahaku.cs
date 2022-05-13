@@ -1,5 +1,4 @@
 ﻿using System;
-using SquareLife.entities;
 
 namespace SquareLife
 {
@@ -7,7 +6,7 @@ namespace SquareLife
     {
         protected Position position;
         protected string Color; //!
-        protected int Size; //!
+        protected EntitySize Size;
 
         protected override Position Position()
         {
@@ -21,7 +20,7 @@ namespace SquareLife
         {
             position = originalPosition;
             Color = ""; //!
-            Size = 1; //!
+            Size = EntitySize.KUVAHAKU_SIZE;
         }
     }
 }

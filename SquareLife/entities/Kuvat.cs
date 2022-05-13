@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SquareLife
 {
@@ -10,7 +6,7 @@ namespace SquareLife
     {
         protected Position position;
         protected string Color; //!
-        protected int Size; //!
+        protected EntitySize Size;
 
         protected override Position Position()
         {
@@ -24,7 +20,7 @@ namespace SquareLife
         {
             position = originalPosition;
             Color = ""; //!
-            Size = 1; //!
+            Size = EntitySize.KUVAT_SIZE;
         }
     }
 }
