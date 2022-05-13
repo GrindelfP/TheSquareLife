@@ -1,13 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SquareLife.entities;
 
 namespace SquareLife
 {
     internal class Kuvahaku : Entity
     {
-        public Kuvahaku(bool status, string id) : base(status, id) { }
+        protected Position position;
+        protected string Color; //!
+        protected int Size; //!
+
+        protected override Position Position()
+        {
+            return position;
+        }
+        protected override Position Move()
+        {
+            throw new NotImplementedException();
+        }
+        public Kuvahaku(string id, Position originalPosition) : base(id, originalPosition)
+        {
+            position = originalPosition;
+            Color = ""; //!
+            Size = 1; //!
+        }
     }
 }
