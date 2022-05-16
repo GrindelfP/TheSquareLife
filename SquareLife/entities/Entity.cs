@@ -5,11 +5,11 @@ namespace SquareLife
 {
     internal abstract class Entity
     {
-        protected Position Position { get; }
-        protected bool IsAlive = true;
-        protected Guid Id { get; }
-        protected abstract Color Color { get; set; }
-        protected abstract EntitySize Size { get; set; }
+        public Position Position { get; }
+        public bool IsAlive = true;
+        public Guid Id { get; }
+        public abstract Color Color { get; }
+        public abstract int Size { get; set; }
         public void Validate()
         {
             throw new NotImplementedException(); 

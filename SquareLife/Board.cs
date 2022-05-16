@@ -8,7 +8,7 @@ namespace SquareLife
 {
     internal class Board
     {
-        public BoardSize BoardSize { get; internal set; }
+        public BoardSize BoardSize { get; set; }
 
         public void Update(List<EntityPosition> entityPositions)
         {
@@ -19,10 +19,10 @@ namespace SquareLife
             BoardSize = boardSize;
         }
     }
-    struct BoardSize
+    class BoardSize
     {
-        public int NumberOfRows;
-        public int NumberOfColumns;
+        public static int NumberOfRows;
+        public static int NumberOfColumns;
 
         public BoardSize(int numberOfRows, int numberOfColumns)
         {

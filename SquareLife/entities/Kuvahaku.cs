@@ -4,8 +4,8 @@ namespace SquareLife
 {
     internal class Kuvahaku : Entity
     {
-        protected override Color Color { get; set; }
-        protected override EntitySize Size { get; set; }
+        public override Color Color { get; }
+        public override int Size { get; set; }
         public Kuvahaku(Position position) : base(position)
         {
             Color = Color.BLUE;

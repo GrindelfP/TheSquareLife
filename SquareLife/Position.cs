@@ -1,9 +1,13 @@
-﻿namespace SquareLife
+﻿using System.Collections.Generic;
+
+namespace SquareLife
 {
     internal class Position
     {
-        internal protected Position(Coordinate coordinates)
+        public HashSet<Coordinate> Coordinates;
+        internal protected Position(HashSet<Coordinate> coordinates)
         {
+            Coordinates = coordinates;
         }
     }
     struct EntityPosition

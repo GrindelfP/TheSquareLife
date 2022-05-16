@@ -1,0 +1,24 @@
+﻿private fun initKuvats(numberOfKuvat: Int, areas: MutableList<Coordinate>): List<Kuvat> {
+            val kuvats = mutableListOf<Kuvat>()
+            repeat(numberOfKuvat) {
+                val coordinate = areas[kotlin.random.Random.nextInt(0, areas.size)]
+                areas.remove(coordinate)
+                val shiftedCorner = Coordinate(
+                    coordinate.x + kotlin.random.Random.nextInt(0, 2),
+                    coordinate.y + kotlin.random.Random.nextInt(0, 2)
+                )
+                kuvats.add(
+                    Kuvat(
+                        position = Position(
+                            coordinates = setOf(
+                                Coordinate(shiftedCorner.x + 1, shiftedCorner.y + 1),
+                                Coordinate(shiftedCorner.x + 1, shiftedCorner.y + 2),
+                                Coordinate(shiftedCorner.x + 2, shiftedCorner.y + 1),
+                                Coordinate(shiftedCorner.x + 2, shiftedCorner.y + 2),
+                            )
+                        )
+                    )
+                )
+            }
+            return kuvats
+        }

@@ -3,7 +3,7 @@
     class God
     {
         Board Board;
-        Population? Population;
+        Population Population;
         BoardVisualizer Visualizer;
 
         private void Begin()
@@ -13,13 +13,13 @@
             Move();
         }
 
-        private void Move() // Not completed yet!
+        private void Move() // Not completed yet! Or it is done?
         {
-            foreach (Entity entity in Population.Entities())
+            Population.Entities().ForEach(entity =>
             {
                 var positionsForMove = MovementCalculator.PosibleMoveCoorsinates(entity, Board);
                 var nextPosition = entity.Move(positionsForMove);
-            }
+            });
             Board.Update(Population.EntityPositions());
             Visualizer.Visualize();
         }
@@ -27,7 +27,7 @@
         public God()
         {
             Board = new Board(new BoardSize(40, 40));
-            Population = Population?.GeneratePopulation(25, 9, Board.BoardSize);
+            Population = Population.GeneratePopulation(25, 9, Board.BoardSize);
             Visualizer = new Visualization.ConsoleBoardVisualizer();
             Begin();
         }

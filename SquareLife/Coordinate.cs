@@ -2,8 +2,8 @@
 {
     internal class Coordinate
     {
-        readonly int X;
-        readonly int Y;
+        public int X;
+        public int Y;
 
         public Coordinate ShiftUp() => new(X, Y - 1);
         public Coordinate ShiftDown() => new(X, Y + 1);
