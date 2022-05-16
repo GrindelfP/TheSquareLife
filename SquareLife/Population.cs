@@ -1,4 +1,7 @@
-﻿namespace SquareLife
+﻿using System;
+using System.Collections.Generic;
+
+namespace SquareLife
 {
     internal class Population
     {
@@ -7,9 +10,22 @@
         Kuvat Kuvatus;
 
         // INIT
-        // FUN ENTITIES
-        // FUN ENTITYPOSITIONS
         // COMPANION OBJECT (???)
+
+        public List<Entity> Entities()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<EntityPosition> EntityPositions()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Population? GeneratePopulation(int numOfKuvahakus, int numOfuvatus, BoardSize sizeOfBoard)
+        {
+            throw new NotImplementedException();
+        }
 
         public Population(Uutiset uutiset, Kuvahaku kuvahakus, Kuvat kuvatus)
         {
