@@ -2,11 +2,11 @@
 {
     internal class Coordinate
     {
-        int X;
-        int Y;
+        readonly int X;
+        readonly int Y;
 
-        private Coordinate ShiftUp() => new(X, Y - 1);
-        private Coordinate ShiftDown() => new(X, Y + 1);
+        public Coordinate ShiftUp() => new(X, Y - 1);
+        public Coordinate ShiftDown() => new(X, Y + 1);
         public Coordinate ShiftLeft() => new(X - 1, Y); 
         public Coordinate ShiftRight() => new(X + 1, Y);
         internal protected Coordinate(int x, int y)
