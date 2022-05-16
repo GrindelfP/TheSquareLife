@@ -62,7 +62,7 @@ namespace SquareLife
             return new Population(uutiset, kuvahakus, kuvatus);
         }
 
-        private List<Kuvahaku> InitKuvahakus(int numberOfKuvahakus, List<Coordinate> areas)
+        private static List<Kuvahaku> InitKuvahakus(int numberOfKuvahakus, List<Coordinate> areas)
         {
             var random = new Random();
             var kuvahakus = new List<Kuvahaku>();
@@ -81,7 +81,7 @@ namespace SquareLife
 
             return kuvahakus;
         }
-        private List<Kuvat> InitKuvatus(int numberOfKuvatus, List<Coordinate> areas)
+        private static List<Kuvat> InitKuvatus(int numberOfKuvatus, List<Coordinate> areas)
         {
             var random = new Random();
             var kuvatus = new List<Kuvat>();
