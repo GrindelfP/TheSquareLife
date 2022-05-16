@@ -4,23 +4,13 @@ namespace SquareLife
 {
     internal class Kuvahaku : Entity
     {
-        protected Position position;
-        protected string Color; //!
-        protected EntitySize Size;
-
-        protected override Position Position()
+        protected override Color Color { get; set; }
+        protected override EntitySize Size { get; set; }
+        public Kuvahaku(Position position) : base(position)
         {
-            return position;
-        }
-        protected override Position Move()
-        {
-            throw new NotImplementedException();
-        }
-        public Kuvahaku(string id, Position originalPosition) : base(id, originalPosition)
-        {
-            position = originalPosition;
-            Color = ""; //!
+            Color = Color.BLUE;
             Size = EntitySize.KUVAHAKU_SIZE;
+            Validate();
         }
     }
 }

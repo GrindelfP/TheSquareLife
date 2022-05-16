@@ -2,25 +2,15 @@
 
 namespace SquareLife
 {
-    internal class Uutiset : Entity 
+    internal class Uutiset : Entity
     {
-        protected Position position;
-        protected string Color; //!
-        protected EntitySize Size;
-
-        protected override Position Position()
+        protected override Color Color { get; set; }
+        protected override EntitySize Size { get; set; }
+        public Uutiset(Position position) : base(position)
         {
-            return position;
-        }
-        protected override Position Move()
-        {
-            throw new NotImplementedException();
-        }
-        public Uutiset(string id, Position originalPosition) : base(id, originalPosition)
-        {
-            position = originalPosition;
-            Color = ""; //!
-            Size = EntitySize.UUTISET_SIZE;
+            Color = Color.RED;
+            Size = EntitySize.KUVAHAKU_SIZE;
+            Validate();
         }
     }
 }
